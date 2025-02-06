@@ -31,7 +31,7 @@ body {
 
 /* Profile Section */
 .profile-section {
-  background-image: url(bg.jpg);
+  background-image: url(/src/bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   height: 600px;
