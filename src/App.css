@@ -3,12 +3,12 @@
   margin: 0 auto;
 
   text-align: center;
-  background-color: black;
+  background-color: white;
 }
 *{
   margin: 0;
   font-family: "Poppins", serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 .container-fluid{
@@ -138,7 +138,7 @@ body {
   padding: 10px;
   background-color: #f9f9f9;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 0px 0px 5px 0px;
+  margin: 0px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -148,9 +148,10 @@ body {
 .section p{
   text-align: left;
 }
-.section h1{
+.section h1 {
   margin-bottom: 20px;
-  border-bottom: solid;
+  border-bottom: solid ;
+  color: #3742fa ;
 }
 
 
@@ -168,13 +169,14 @@ body {
 }
 .data{
   background-color: white;
-  border: solid 1px;
+  border-left: solid 5px  #3742fa;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 10px 0px;
 
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   width: 100%;
 }
 .data p{
@@ -185,11 +187,13 @@ body {
   display: none;
 }
 h3{
-  background-color: pink;
+  background-color: #3742fa;
+  color: white;
   padding: 5px 15px;
   margin: 0;
   border-radius: 20px;
 }
+
 
 
 @media screen and (max-width:700px) {
@@ -244,5 +248,25 @@ h3{
   }
   h3{
     display: none;
+  }
+}
+
+/*animations*/
+.typing {
+  width: 8ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
   }
 }

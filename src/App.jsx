@@ -11,7 +11,7 @@ function App() {
         <div className='pro-text container'>
           <div className='pro-text1'>
             <h1 >Hello, I am</h1>
-            <h1 className='name'><b>Kaushal R</b></h1>
+            <h1 className='name typing'><b>Kaushal R</b></h1>
             <h4>Front-end Designer | Developer</h4>
           </div>
           <img  className="pro-photo" src="" alt="hjh" />
@@ -21,7 +21,7 @@ function App() {
       <nav className="navbar">
           <div className="moreIcon" onClick={() => setIsActive(!isActive)} >
               <h1><i class="bi bi-list"></i></h1>
-              <h1>Kaushal R</h1>
+              <h1 style={{color:"#3742fa"}} >Kaushal R</h1>
           </div>
           <div className={`navbarL ${isActive ? "active" : ""}`}>
             <ul>
@@ -30,7 +30,7 @@ function App() {
               <li><a href="#education">Education</a></li>
               
             </ul>
-            <h3>R Kaushal</h3>
+            <h3 >R Kaushal</h3>
             <ul>
               <li><a href="#skillsets">Skillsets</a></li>
               <li><a href="#projects">Projects</a></li>
@@ -50,7 +50,7 @@ function App() {
           <h1>Personal info</h1>
           <p>Birthdate: 21.05.2004</p>
           <p>Email: kaushalram021@gmail.com</p>
-          <p>Phone: 9344614676</p>
+          <p>Phone: +91 9344614676</p>
           <p>Location: Madurai</p>
         </div>
         <div className='data'>           
@@ -64,12 +64,30 @@ function App() {
       {/* Skillsets Section */}
       <div id="skillsets" className="section">
         <div className='data'>           
+        <h1>Skills</h1>
           <p><b>Web Development</b></p>
-          <p>JavaScript, ReactJS, HTML, CSS</p>
+          <p>
+            <ul>
+              <li>Javascript</li>
+              <li>ReactJS</li>
+              <li>CSS</li>
+              <li>HTML</li>
+            </ul>
+          </p>
           <p><b>Programming</b></p>
-          <p>C, Java</p>
+          <p>
+            <ul>
+              <li>C</li>
+              <li>Java</li>
+            </ul>
+          </p>
           <p><b>Database</b></p>
-          <p>SQL, MySQL</p>
+          <p>
+            <ul>
+              <li>SQL</li>
+              <li>MySQL</li>
+            </ul>
+          </p>
         </div>
       </div>
 
