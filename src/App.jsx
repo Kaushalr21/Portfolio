@@ -12,7 +12,7 @@ function App() {
           <div className='pro-text1'>
             <h1 >Hello, I am</h1>
             <h1 className='name typing'><b>Kaushal R</b></h1>
-            <h4>Front-end Designer | Developer</h4>
+            <h3>Front-end Designer | Developer</h3>
           </div>
           <img  className="pro-photo" src="" alt="hjh" />
         </div>
