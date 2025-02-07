@@ -3,14 +3,15 @@ import './App.css'; // Import your CSS file for styling   <img src="bg.jpg" alt=
 
 function App() {
   return (
-    <div className="container-fluid ">
+    <div className="container-fluid">
       {/* First Div: Profile Photo and Navbar */}
       
       <div className="profile-section box">
         <div className='pro-text container'>
           <div className='pro-text1'>
-            <h1 className='name'>Kaushal R</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consequatur veniam aliquid quisquam commodi obcaecati minima asperiores officia ipsa iste.</p>
+            <h1>Hello, I am</h1>
+            <h1 className='name'><b>Kaushal R</b></h1>
+            <h4>Front-end Designer | Developer</h4>
           </div>
           <img className="pro-photo" src="wew" alt="" />
         </div>
@@ -18,30 +19,35 @@ function App() {
       </div>
       <nav className="navbar">
           <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#home">About</a></li>
             <li><a href="#education">Education</a></li>
+            
+          </ul>
+          <ul>
             <li><a href="#skillsets">Skillsets</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects">Contact</a></li>
           </ul>
         </nav>
       
 
       {/* Education Section */}
       <div id="education" className="section">
-        <h2>Education</h2>
         <div className='data'>           
-          <p><b>Bachelor of Engineering EEE</b></p>
-          <p>KLN College of Engineering, Sivagangai</p>
-          <p><b>CGPA - 8.229(till 6th semester)</b></p>
+          <h1>Who am I?</h1>
+          <p>I'm a web developer creating seamless,optimizing websites and user-friendly digital experiences. </p>
         </div>
         <div className='data'>           
-          <p><b>HSC Examination</b></p>
-          <p>SPJ Matric. Hr. Sec School, Madurai</p>
-          <p><b>Percentage - 86.48%</b></p>
+          <h1>Personal info</h1>
+          <p>Birthdate: 21.05.2004</p>
+          <p>Email: kaushalram021@gmail.com</p>
+          <p>Phone: 9344614676</p>
+          <p>Location: Madurai</p>
         </div>
         <div className='data'>           
-          <p><b>SSLC Examination</b></p>
-          <p>SPJ Matric. Hr. Sec School, Madurai</p>
-          <p><b>Percentage - 85.6%</b></p>
+          <h1>My Expertise</h1>
+          <p>Web Designing</p>
         </div>
         
         
@@ -67,9 +73,7 @@ function App() {
       </div>
 
       {/* Footer */}
-      <footer className="footer">
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
-      </footer>
+      
     </div>
   );
 }

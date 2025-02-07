@@ -8,6 +8,9 @@
 *{
   margin: 0;
 }
+.container-fluid{
+  padding: 0;
+}
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
@@ -21,13 +24,11 @@ body {
   text-align: center;
   
 }
-.box{
-  padding: 10px;
-}
+
 .name{
-  font-size: 120px;
-  display: inline;
+  font-size: 100px;
 }
+
 
 /* Profile Section */
 .profile-section {
@@ -54,6 +55,7 @@ body {
   text-align: left;
   justify-content: center;
   margin: 0px 50px 0px 0px;
+  color: white;
 }
 .pro-text p{
   width: 400px;
@@ -74,13 +76,14 @@ body {
 }
 
 .navbar {
-  background-color: #f4f4f4;
+  background-color: white;
   padding: 10px 0px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   position: sticky;
   top: 75px;
-  height: 50px;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 
@@ -91,26 +94,43 @@ body {
   display: flex;
   gap: 20px;
 }
+.navbar ul li {
+  width: 100px;
+  margin: 5px;
+  height: 30px;
+  text-align: left;
+}
 
 .navbar ul li a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
   padding: 5px;
+  transition: 0.2s;
 }
 
 .navbar ul li a:hover {
-  color: #007BFF;
+  color: #3742fa;
 }
 
 /* Sections */
 .section {
-  margin: 40px 0;
-  padding: 20px;
+  padding: 10px;
   background-color: #f9f9f9;
-  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0px 0px 5px 0px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
+.section p{
+  text-align: left;
+}
+.section h1{
+  margin-bottom: 20px;
+  border-bottom: solid;
+}
+
 
 .section h2 {
   margin-bottom: 10px;
@@ -121,18 +141,19 @@ body {
 .footer {
   margin-top: 40px;
   padding: 10px;
-  background-color: #333;
-  color: #fff;
-  border-radius: 5px;
+  background-color: white;
+  color: black
 }
 .data{
-  background-color: grey;
+  background-color: white;
+  border: solid 1px;
   padding: 20px;
-  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 10px 0px;
+
+  width: 100%;
 }
 .data p{
   margin: 5px 0px;
@@ -154,7 +175,7 @@ body {
     margin: 0;
   }
   .pro-text p{
-    width: 400px;
+    width: 300px;
     text-align: center;
   }
   .pro-photo{
@@ -166,5 +187,13 @@ body {
   .navbar {
     top: 60px;
 
+  }
+  .navbar ul{
+    flex-direction: column;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
