@@ -7,6 +7,9 @@
 }
 *{
   margin: 0;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .container-fluid{
   padding: 0;
@@ -35,7 +38,7 @@ body {
   background-image: url(/src/bg.jpg);
   background-size: cover;
   background-attachment: fixed;
-  height: 600px;
+  height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,6 +87,15 @@ body {
   top: 75px;
 
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.navbarL {
+  background-color: white;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 75px;
+  width: 100%;
 }
 
 
@@ -142,7 +154,7 @@ body {
   margin-top: 40px;
   padding: 10px;
   background-color: white;
-  color: black
+  color: #3742fa;
 }
 .data{
   background-color: white;
@@ -158,6 +170,9 @@ body {
 .data p{
   margin: 5px 0px;
   padding: 0;
+}
+.moreIcon{
+  display: none;
 }
 
 @media screen and (max-width:700px) {
@@ -186,10 +201,19 @@ body {
   }
   .navbar {
     top: 60px;
-
+    flex-direction: column;
   }
   .navbar ul{
     flex-direction: column;
+  }
+  .navbarL{
+    display: none;
+  }
+  .navbarL.active{
+    display: flex;
+  }
+  .moreIcon{
+    display: block;
   }
   .section {
     display: flex;

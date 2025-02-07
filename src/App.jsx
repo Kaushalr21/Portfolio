@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css'; // Import your CSS file for styling   <img src="bg.jpg" alt="Profile" className="profile-photo"/>
 
 function App() {
+  moreIcon.addEvent
   return (
     <div className="container-fluid">
       {/* First Div: Profile Photo and Navbar */}
@@ -18,17 +19,22 @@ function App() {
         
       </div>
       <nav className="navbar">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#home">About</a></li>
-            <li><a href="#education">Education</a></li>
-            
-          </ul>
-          <ul>
-            <li><a href="#skillsets">Skillsets</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#projects">Contact</a></li>
-          </ul>
+        <div className='moreIcon'>
+          <h1>List</h1>
+        </div>
+          <div className="navbarL">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#home">About</a></li>
+              <li><a href="#education">Education</a></li>
+              
+            </ul>
+            <ul>
+              <li><a href="#skillsets">Skillsets</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#projects">Contact</a></li>
+            </ul>
+          </div>
         </nav>
       
 
