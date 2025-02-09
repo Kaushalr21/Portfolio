@@ -10,7 +10,7 @@ function App() {
       <div id="ok" className="profile-section box">
         <div className='pro-text container'>
           <div className='pro-text1'>
-            <h1 >Hello, I am</h1>
+            <h1 >Hello, I'm</h1>
             <h1 className='name typing'><b>Kaushal R</b></h1>
             <h5>Front-end Designer | Developer</h5>
           </div>
