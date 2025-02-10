@@ -4,100 +4,57 @@ import './App.css'; // Import your CSS file for styling   <img src="bg.jpg" alt=
 function App() {
   const [isActive, setIsActive] = useState(false);
   return (
-    <div className="container-fluid">
-      {/* First Div: Profile Photo and Navbar */}
+    <div className="container-fluid mainPage">
       
-      <div id="ok" className="profile-section box">
-        <div className='pro-text container'>
-          <div className='pro-text1'>
-            <h1 >Hello, I'm</h1>
-            <h1 className='name typing'><b>Kaushal R</b></h1>
+      {/* Profile Photo */}      
+      <div className="page home">
+          <div className='homeText'>
+            <h1 >Hello, I am</h1>
+            <h2 className='name'><b>Kaushal R</b></h2>
             <h5>Front-end Designer | Developer</h5>
           </div>
-          <img  className="pro-photo" src="" alt="hjh" />
-        </div>
-        
+          <img  className="pro-photo" src={null} alt="" />
+          <div className="homeButton">
+            <p className="But"> HOME <i className="bi bi-caret-left-fill"></i></p>
+            <p className="But"> About <i className="bi bi-caret-left-fill"></i></p>
+            <p className="But"> Skills <i className="bi bi-caret-left-fill"></i></p>
+            <p className="But"> Projects <i className="bi bi-caret-left-fill"></i></p>
+          </div>      
       </div>
-      <nav className="navbar">
-          <div className="moreIcon" onClick={() => setIsActive(!isActive)} >
-              <h1><i class="bi bi-list"></i></h1>
-              <h1 style={{color:"#3742fa"}} >Kaushal R</h1>
-          </div>
-          <div className={`navbarL ${isActive ? "active" : ""}`}>
-            <ul>
-              <li><a href="#ok">Home</a></li>
-              <li><a href="#home">About</a></li>
-              <li><a href="#education">Education</a></li>
-              
-            </ul>
-            <h3 >R Kaushal</h3>
-            <ul>
-              <li><a href="#skillsets">Skillsets</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#projects">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
       
-
-      {/* Education Section */}
-      <div id="education" className="section">
+      {/*Section 2 */}
+      <div id="education" className="page aboutSec">
         <div  className='data'>           
           <h1>Who am I?</h1>
           <p>I'm a web developer creating seamless,optimizing websites and user-friendly digital experiences. </p>
         </div>
         <div className='data'>           
-          <h1>Personal info</h1>
-          <p>Birthdate: 21.05.2004</p>
-          <p>Email: kaushalram021@gmail.com</p>
-          <p>Phone: +91 9344614676</p>
-          <p>Location: Madurai</p>
-        </div>
-        <div className='data'>           
           <h1>My Expertise</h1>
           <p>Web Designing</p>
-        </div>
-        
-        
+        </div>        
       </div>
 
       {/* Skillsets Section */}
-      <div id="skillsets" className="section">
+      <div id="skillsets" className="page skillSec">
         <div className='data'>           
-        <h1>Skills</h1>
-          <p><b>Web Development</b></p>
-          <p>
-            <ul>
-              <li>Javascript</li>
-              <li>ReactJS</li>
-              <li>CSS</li>
-              <li>HTML</li>
-            </ul>
-          </p>
-          <p><b>Programming</b></p>
-          <p>
-            <ul>
-              <li>C</li>
-              <li>Java</li>
-            </ul>
-          </p>
-          <p><b>Database</b></p>
-          <p>
-            <ul>
-              <li>SQL</li>
-              <li>MySQL</li>
-            </ul>
-          </p>
+          <h1>Skills</h1>
+            
+        
         </div>
       </div>
 
       {/* Projects Section */}
-      <div id="projects" className="section">
-        <h2>Projects</h2>
-        <p>Your projects and accomplishments go here.</p>
-      </div>
+      <div id="skillsets" className="page proSec">
+        <div className='data'>           
+          <h1>Project</h1>                  
+        </div>
+        
+      </div>     
 
       {/* Footer */}
+      <footer className="page footer">
+        <p>&copy; 2025 Kaushal. All rights reserved.</p>
+      </footer>
       
     </div>
   );
