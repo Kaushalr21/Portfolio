@@ -19,8 +19,8 @@ body {
 }
 
 .mainPage{
-  scroll-snap-type: y mandatory ;
-  overflow-y: scroll;
+  /*scroll-snap-type: y mandatory ;
+  overflow-y: scroll; */
   height: 100vh;
 }
 
@@ -60,18 +60,40 @@ body {
 /* Home page */
 .page{
   height: 100vh;
-  scroll-snap-align: start;
+  /*scroll-snap-align: start; */
+  background-color: #2f3640;
 }
 .home {
-  background-image: url(/src/bg.jpg);
+  color: #dcdde1;
   background-size: cover;
   height: 100vh;
   
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 100px;
+}
+.home-icon{
 
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.home-icon img{
+  width: 40px;
+  height: 40px;
+  margin: 0px 20px;
+  transition: 0.2s;
+  border-radius: 50%;
+  filter: brightness(10000%);
+}
+.home-icon img:hover{
+  -webkit-box-shadow:0px 0px 40px 0px rgba(255,255,255,0.9);
+-moz-box-shadow: 0px 0px 40px 0px rgba(255,255,255,0.9);
+box-shadow: 0px 0px 40px 0px rgba(255,255,255,0.9);
+filter: brightness(100%);
 }
 .homeText{
   text-align: left;
@@ -81,6 +103,10 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 50%; 
+}
+.home-data{
+  display: flex;
+  gap: 50px;
 }
 
 .homeButton{
@@ -107,7 +133,7 @@ body {
   justify-content: flex-end;
   overflow: hidden;
 
-  background-color: white;
+  background-color: #dcdde1;
   color: black;
 }
 
@@ -122,16 +148,133 @@ body {
 }
 /*  page 2 */
 .aboutSec{
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f3640;
+}
+.about-data{
+  background-color: #353b48;
+  color: #dcdde1;
+  border-radius: 20px;
+  width: 80%;
+  margin: 20px;
+  padding: 20px; 
+  transition: .5s;
+}
+.about-data:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.about-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.about-text img{
+  border-radius: 50%;
+}
+.about-text p, h3{
+  text-align: left;
+
 }
 
 /*  page 3 */
 .skillSec{
-  background-color: green;
+  display: flex;
+  background-color: #2f3640;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
+
+.skill-data{
+  background-color: #353b48;
+  color: #dcdde1;
+  border-radius: 20px;
+  width: 40%;
+  padding: 20px;
+  transition: .5s;
+}
+.skill-data:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.skill-text{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.skill-text img{
+  border-radius: 50%;
+}
+.skill-text p, h3{
+  text-align: left;
+
+}
+.skill-text p{
+  font-size: 15px;
+
+}
+.skill-text-plus{
+  text-align: left;
+}
+.skill-text-plus span{
+  margin: 0px 10px 0px 0px;
+  background-color: #2f3640;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: solid #dcdde1 1px;
+}
+.skill-head{
+  width: 100%;
+  margin: 0;
+}
+/*project section*/
+#pro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2f3640;
+}
+.pro-data{
+  background-color: #353b48;
+  color: #dcdde1;
+  border-radius: 20px;
+  width: 80%;
+  margin: 20px;
+  padding: 20px;  
+  transition: .5s;
+
+}
+.pro-data:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.pro-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.pro-text img{
+  border-radius: 50%;
+}
+.pro-text p, h3{
+  text-align: left;
+
+}
+
+
 .proSec{
-  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.footer{
+  color: #dcdde1;
+}
+
 
 
 @media screen and (max-width:700px){
@@ -167,7 +310,6 @@ body {
       margin: 3px 1px;
       padding: 6px 10px 6px 2px;
       transition: .5s;
-      transition-delay: 2s;
     
       display: flex;
       justify-content: flex-end;
@@ -175,6 +317,11 @@ body {
     
       color: black;
     }
+    .home-data{
+      flex-direction: column;
+      align-items: center;
+    }
+
     .homeButton .But:hover{
       border: none;
       width: 120px;
@@ -189,6 +336,23 @@ body {
     
       color: black;
     }
+    .about-text{
+      flex-direction: column;
+    }
+
+    .skill-data{
+      width: 80%;
+    }
+    .skill-text{
+      flex-direction: column;
+    }
+    .skillSec{
+      height: 1800px;
+      align-items: center;
+      justify-content: center;
+    
+    }
+
 
 
 }
