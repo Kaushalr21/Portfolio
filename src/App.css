@@ -25,21 +25,18 @@ body {
 }
 
 ::-webkit-scrollbar{
-  width: 10px;
+  width: 5px;
 }
 ::-webkit-scrollbar-track{
-  background-color: whitesmoke;
+  background-color: #2d3436;
 }
 ::-webkit-scrollbar-thumb{
-  background-color: gray;
-  border: solid 2px whitesmoke;
+  background-color: #fbc531;
   border-radius: 10px;
   border-top: 0;
   border-bottom: 0;
 }
-::-webkit-scrollbar-thumb:hover{
-  background-color: darkgray;
-}
+
 
 /* General Styles */
 .container-fluid{
