@@ -309,7 +309,7 @@ span:hover{
       width: 8px;
       height: inherit;
       margin: 5px 2px;
-      padding: 8px 2px 8px 8px;
+      padding: 5px 2px 5px 8px;
       transition: .2s;
       transition-delay: 0.5;
     }
@@ -317,7 +317,7 @@ span:hover{
       border: none;
       height: inherit;
       margin: 5px 2px;
-      padding: 8px 2px 8px 8px;
+      padding: 5px 2px 5px 8px;
       transition: .2s;
       transition-delay: 0.5;
     }
