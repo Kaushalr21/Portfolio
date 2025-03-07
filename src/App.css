@@ -94,6 +94,8 @@ filter: brightness(100%);
   position: fixed;
   right: 10px;
   top: 20px;
+
+  
 }
 .homeButton i{
   margin-left: 15px;
@@ -113,6 +115,7 @@ filter: brightness(100%);
 
   background-color: #dcdde1;
   color: black;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .homeButton .But:hover{
@@ -305,8 +308,16 @@ span:hover{
       border: none;
       width: 8px;
       height: inherit;
-      margin: 10px 2px;
-      padding: 10px 2px 10px 10px;
+      margin: 5px 2px;
+      padding: 8px 2px 8px 8px;
+      transition: .2s;
+      transition-delay: 0.5;
+    }
+    .homeButton .But:hover{
+      border: none;
+      height: inherit;
+      margin: 5px 2px;
+      padding: 8px 2px 8px 8px;
       transition: .2s;
       transition-delay: 0.5;
     }

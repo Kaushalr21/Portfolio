@@ -5,6 +5,8 @@ import fb from './assets/facebook.png'
 import insta from './assets/instagram.png'
 import git from './assets/github.png'
 import mail from './assets/email.png'
+import weather from './assets/cs.png'
+import order from './assets/a.png'
 
 function App() {
   const [isActive, setIsActive] = useState(false);
@@ -114,22 +116,22 @@ function App() {
       <h1 id="page-head">Projects</h1>
         <div  className='project-content'>                     
           <div className="project-profile" >
-              <img src={vLogo} alt="" style={{width:"200px", height:"200px"}}/>
+              <img src={order} alt="" style={{width:"200px", height:"200px"}}/>
               <div>
                 <h3>Order Form with WhatsApp API </h3>
                 <p>Developed an automated order form that integrates with WhatsApp API to send order details directly to the company’s WhatsApp number. </p>       
               </div>
-              <span> <a href=""></a><i class="bi bi-arrow-right"></i> </span>
+              <span title="open project"> <a href="https://github.com/Kaushalr21/VaaranamNew" target="_blank"> <i class="bi bi-arrow-right"></i></a> </span>
           </div>
         </div>     
         <div  className='project-content'>                     
           <div className="project-profile" >
-              <img src={vLogo} alt="" style={{width:"200px", height:"200px"}}/>
+              <img src={weather} alt="" style={{width:"200px", height:"200px"}}/>
               <div>
                 <h3> Weather web application </h3>
                 <p>Developed a web application using React and fetched data from API.</p>
               </div>
-              <span> <a href=" " ></a><i class="bi bi-arrow-right"></i> </span>
+              <span title="open project"> <a href="https://github.com/Kaushalr21/Weather" target="_blank"><i class="bi bi-arrow-right" ></i></a> </span>
           </div>
         </div>          
       </div>
