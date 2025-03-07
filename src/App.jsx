@@ -89,7 +89,7 @@ function App() {
             <img src={vLogo} alt="" style={{width:"200px", height:"200px"}}/>
             <div className="skill-text-plus ">
               <h3>Database</h3>
-              <p>C and Java programs are developed to build efficient, scalable, and robust software solutions. </p>
+              <p>Familiar with the basics of SQL and MySQL, including database creation, CRUD operations, simple queries, and basic joins. </p>
               <div className="skill-display">
                 <span>SQL</span>
                 <span>MySQL</span>                    
