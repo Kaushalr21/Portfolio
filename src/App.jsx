@@ -32,10 +32,10 @@ function App() {
           </div>
         </div>
         <div className="homeButton">
-            <p className="But"> HOME <i className="bi bi-caret-left-fill tri"></i></p>
-            <p className="But"> About <i className="bi bi-caret-left-fill tri"></i></p>
-            <p className="But"> Skills <i className="bi bi-caret-left-fill tri"></i></p>
-            <p className="But"> Projects <i className="bi bi-caret-left-fill tri"></i></p>
+            <a className="But" href="#home-page"> HOME <i className="bi bi-caret-left-fill tri"></i></a>
+            <a className="But" href="#about-page"> About <i className="bi bi-caret-left-fill tri"></i></a>
+            <a className="But" href="#skill-page"> Skills <i className="bi bi-caret-left-fill tri"></i></a>
+            <a className="But" href="#project-page"> Projects <i className="bi bi-caret-left-fill tri"></i></a>
         </div>      
       </div>
       
@@ -111,7 +111,7 @@ function App() {
         </div>                
       </div>     
 
-      {/*ABOUT PAGE*/}
+      {/*PROJECT PAGE*/}
       <div id="project-page">
       <h1 id="page-head">Projects</h1>
         <div  className='project-content'>                     
