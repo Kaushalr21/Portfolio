@@ -1,0 +1,109 @@
+.home-container {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.profile-image {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
+}
+
+.home-name {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.home-caption {
+  font-size: 1.2rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+.home-icons {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 40px;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.home-icons a {
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.home-icons a:hover {
+  color: #2563eb;
+}
+
+.resume-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* =======================
+   Responsive Styles
+======================= */
+
+@media (max-width: 768px) {
+  .profile-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .home-name {
+    font-size: 2.2rem;
+  }
+
+  .home-caption {
+    font-size: 1rem;
+  }
+
+  .home-icons {
+    font-size: 1.5rem;
+    gap: 1rem;
+  }
+
+  .resume-button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-name {
+    font-size: 1.8rem;
+  }
+
+  .home-caption {
+    font-size: 0.9rem;
+  }
+
+  .home-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+}
