@@ -2,6 +2,10 @@ import React from 'react';
 import '../styles/projects.css';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
+import weather from '../assets/weather.jpg'
+import portf from '../assets/portf.jpg'
+import order from '../assets/order.jpg'
+
 // Go up one folder from components to reach assets
 import project1 from '../assets/profile.jpg';
 import project2 from '../assets/profile.jpg';
@@ -11,25 +15,25 @@ import project3 from '../assets/react.svg';
 const Projects = () => {
   const projectData = [
     {
-      image: project1,
+      image: weather,
       title: 'Weather App',
       caption: 'A web app that displays real-time weather using OpenWeather API.',
-      github: 'https://github.com/yourusername/weather-app',
-      live: 'https://yourdomain.com/weather-app',
+      github: 'https://github.com/Kaushalr21/Weather',
+      live: 'https://weatherfromhere.vercel.app/',
     },
     {
-      image: project2,
-      title: 'Chat App',
-      caption: 'A real-time chat application using Socket.io and Node.js.',
-      github: 'https://github.com/yourusername/chat-app',
-      live: 'https://yourdomain.com/chat-app',
+      image: order,
+      title: 'Order form',
+      caption: 'Created a seamless order form integrated with WhatsApp API for instant customer communication!',
+      github: 'https://github.com/Kaushalr21/VaaranamNew',
+      live: 'https://vaaranam-new.vercel.app/',
     },
     {
-      image: project3,
+      image: portf,
       title: 'Portfolio Website',
       caption: 'My personal responsive portfolio built with React.',
-      github: 'https://github.com/yourusername/portfolio',
-      live: 'https://yourdomain.com/portfolio',
+      github: 'https://github.com/Kaushalr21/Portfolio',
+      live: 'https://kaushalram.vercel.app/',
     },
   ];
 
