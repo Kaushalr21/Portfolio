@@ -28,7 +28,7 @@ const Skills = () => {
       <div className="skills-grid">
         {skillData.map((skill, index) => (
           <div className="skill-card" key={index}>
-            <img src={skill.image} alt={skill.title} className="skill-image" />
+            {/* <img src={skill.image} alt={skill.title} className="skill-image" /> */}
             <h3 className="skill-title">{skill.title}</h3>
             <p className="skill-caption">{skill.caption}</p>
           </div>
