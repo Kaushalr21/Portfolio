@@ -5,55 +5,21 @@ import '../styles/skills.css';
 const Skills = () => {
   const skillData = [
     {
-      image: '/html.png',
-      title: 'HTML5',
-      caption: 'Markup language for structuring web pages',
+      image: '../src/assets/1.avif',
+      title: 'Web development',
+      caption: 'HTML, CSS, Javascript, Bootstrap, React.js and Django',
     },
     {
-      image: '/css.png',
-      title: 'CSS3',
-      caption: 'Style sheet language for designing web pages',
+      image: '../src/assets/2.jpg',
+      title: 'Software devevlopment',
+      caption: 'Promblem soving using Java and Python languages',
     },
     {
-      image: '/js.png',
-      title: 'JavaScript',
-      caption: 'Scripting language for interactive web features',
+      image: '../src/assets/3.jpg',
+      title: 'Database',
+      caption: 'Data handling using SQL queries in MySQL software',
     },
-    {
-      image: '/react.png',
-      title: 'React JS',
-      caption: 'Library for building user interfaces',
-    },
-    {
-      image: '/node.png',
-      title: 'Node JS',
-      caption: 'Runtime for building server-side applications',
-    },
-    {
-      image: '/mysql.png',
-      title: 'MySQL',
-      caption: 'Relational database management system',
-    },
-    {
-      image: '/mysql.png',
-      title: 'Python',
-      caption: 'Relational database management system',
-    },
-    {
-      image: '/mysql.png',
-      title: 'Java',
-      caption: 'Relational database management system',
-    },
-    {
-      image: '/mysql.png',
-      title: 'Git',
-      caption: 'Relational database management system',
-    },
-    {
-      image: '/mysql.png',
-      title: 'GitHub',
-      caption: 'Relational database management system',
-    },
+    
   ];
 
   return (
@@ -62,9 +28,9 @@ const Skills = () => {
       <div className="skills-grid">
         {skillData.map((skill, index) => (
           <div className="skill-card" key={index}>
-            {/* <img src={skill.image} alt={skill.title} className="skill-image" /> */}
+            <img src={skill.image} alt={skill.title} className="skill-image" />
             <h3 className="skill-title">{skill.title}</h3>
-            {/* <p className="skill-caption">{skill.caption}</p> */}
+            <p className="skill-caption">{skill.caption}</p>
           </div>
         ))}
       </div>

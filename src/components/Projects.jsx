@@ -5,6 +5,7 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import weather from '../assets/weather.jpg'
 import portf from '../assets/portf.jpg'
 import order from '../assets/order.jpg'
+import ec from '../assets/ec.png'
 
 // Go up one folder from components to reach assets
 import project1 from '../assets/profile.jpg';
@@ -14,6 +15,12 @@ import project3 from '../assets/react.svg';
 
 const Projects = () => {
   const projectData = [
+    {
+      image: ec,
+      title: 'E-commerce Website',
+      caption: 'E-commerce wwebiste with add-to-cart and favrite options',
+      github: 'https://github.com/Kaushalr21/shopkart',
+    },
     {
       image: weather,
       title: 'Weather App',
@@ -35,6 +42,7 @@ const Projects = () => {
       github: 'https://github.com/Kaushalr21/Portfolio',
       live: 'https://kaushalram.vercel.app/',
     },
+    
   ];
 
   return (
@@ -49,9 +57,6 @@ const Projects = () => {
             <div className="project-links">
               <a href={project.github} target="_blank" rel="noopener noreferrer">
                 <FaGithub /> GitHub
-              </a>
-              <a href={project.live} target="_blank" rel="noopener noreferrer">
-                <FaExternalLinkAlt /> Live Demo
               </a>
             </div>
           </div>

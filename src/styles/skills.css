@@ -1,13 +1,14 @@
 .skills-container {
   padding: 4rem 2rem;
-  background-color: #f3f4f6;
+  /* background-color: #f3f4f6; */
+  background-color: #1f2937;
   text-align: center;
 }
 
 .skills-heading {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #1f2937;
+  color: yellow;
 }
 
 .skills-grid {
@@ -31,9 +32,9 @@
 }
 
 .skill-image {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
   margin-bottom: 1rem;
 }
 

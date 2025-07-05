@@ -1,6 +1,10 @@
 .about-container {
   padding: 4rem 2rem;
-  background-color: #f9fafb;
+  /* background-color: #f9fafb; */
+  /* background-image: url("../src/assets/bg.jpg") ; */
+  background-color: #1f2937;
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -36,12 +40,12 @@
 .about-heading {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #1f2937;
+  color: yellow;
 }
 
 .about-text p {
   font-size: 1.1rem;
-  color: #4b5563;
+  color: white;
   line-height: 1.6;
 }
 
